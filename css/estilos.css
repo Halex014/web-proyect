@@ -1,0 +1,207 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	/*background: url('../img/bg.jpg');*/
+    background-color: #fff;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family:'Open Sans',Sans-serif, Arial, Helvetica;
+}
+/*Nav Bar*/
+.container-fluid .navbar-brand img{
+    width: 50px;
+}
+
+a {	text-decoration: none; }
+
+.contenedor {
+	width: 90%;
+	max-width: 700px;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	align-items:center;
+}
+
+.tarjeta {
+    margin-top: -550px !important;
+	margin:40px 0;
+	width: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+/* ----- Slider Info */
+
+.slider_info {
+	text-align: center;
+	overflow: hidden;
+	padding: 20px 0;
+	z-index: 1000;
+	position: relative;
+}
+
+/* Estilos para los Slide de Info */
+.slider_info .informacion .trabajo {
+	color: #55acee;
+	font-size: 18px;
+	line-height: 18px;
+	margin-bottom: 16px;
+}
+
+.slider_info .informacion .pais {
+	color: #8d8d8d;
+	font-family: 14px;
+	line-height: 14px;
+}
+
+.slider_info .informacion .pais img {
+	position: relative;
+	top:2px;
+	margin-right: 10px;
+}
+
+/* ----- ----- Redes Sociales ----- ----- */
+.redes-sociales {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.redes-sociales a {
+	display: inline-block;
+	font-style:20px;
+	width: 50px;
+	height: 50px;
+	padding: 14px 0;
+	border-radius: 50%;
+	color: #fff;
+	margin: 0 10px;
+}
+
+.redes-sociales a img{
+    margin-top: -3px;
+    width: 25px;
+}
+
+.redes-sociales .google { background: #1769ff; }
+.redes-sociales .facebook { background: #3b5998; }
+.redes-sociales .twitter { background: #55acee; }
+
+/*Carrusel*/
+.carrusel{
+    width: 50px;
+    height: 40px;
+}
+
+/*Color de letras en carousel*/
+.carousel-inner h5{
+    color: black;
+}
+.carousel-inner p{
+    color: black;
+}
+
+/*Footer*/
+/* Footer */
+
+footer{
+    background: #A9DFBF;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #000;
+    border-bottom: 3px solid rgb(67, 217, 255);
+    padding-bottom: 5px;
+    padding-bottom: 4px;
+}
+
+.content-foo p{
+    color: #000;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+.copyright {
+	background-color: #1a252f;
+}
+
+hr{
+	opacity: 1 !important;
+	width: 20% !important;
+}
+
+.hrTres{width: 100% !important; margin-top: 60px !important;}
+
+/*<hr style="text-align: right; margin-right: 0px;">*/
+/*Estilos de parrafos*/
+.parrafos{
+	margin-top: -50px;
+}
+.parrafos h1{
+	text-align: left;
+	font-size: 15px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.parrafos p{
+	text-align: left;
+	font-size: 15px;
+	font-family: sans-serif;
+}
+.parrafos .textOp{
+	opacity: 0.60;
+	font-size: 15px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.parrafos li{
+	text-align: left;
+	font-size: 15px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*@ medias*/
+@media (min-width: 1000px){
+    .card {display: none !important;}
+    .tarjetas h1{display: none;}
+	.tarjeta {margin-top: -200px !important;}
+}
+
+@media (min-width: 1200px){
+	.tarjeta {margin-top: -400px !important;}
+}
+
+@media (max-width: 900px){
+    .tarjeta {margin-top: 10px !important; background-color: #fff;}
+    .carousel {display: none;}
+	.contenedor .textosHed h1 {font-size: 15px !important;}
+	.contenedor .logos h1 {font-size: 15px !important; width: 37% !important;}
+	.hrTres {width: 86% !important;}
+	.parrafos {margin-top: -90px !important;}
+	.parrafos img {width: 100%;}
+}
